@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page page-question">
+  <header class="site-header">
+<a href="home.html" class="logo logo-image-link">
+  <img src="logo_branco.png" alt="ALÇAR logo" class="logo-image" />
+</a>
+    <nav class="desktop-nav">
+      <a href="question.html">HOME</a>
+      <a href="archive.html">ARCHIVE</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="question.html">HOME</a>
+      <a href="archive.html">ARCHIVE</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+  </header>
+
+  <main class="mobile-frame mobile-frame-question">
+    <section class="question-wrap">
+      <h1 class="main-title">What would you not want to be silenced?</h1>
+
+      <div class="editor-toolbar">
+        <select id="fontSelect" title="Choose font">
+          <option value="FuturaCyrillicMedium">Medium</option>
+          <option value="Arial">Arial</option>
+          <option value="Times New Roman">Times</option>
+          <option value="Courier New">Courier</option>
+        </select>
+
+        <button type="button" id="boldBtn"><strong>B</strong></button>
+        <input type="color" id="colorPicker" value="#ffffff" title="Text color" />
+      </div>
+
+      <div
+        id="editor"
+        class="editor-box"
+        contenteditable="true"
+        data-placeholder="Write here..."
+      ></div>
+
+      <div class="editor-meta">
+        <span>Max 40 words / 280 characters</span>
+        <span id="charCounter">0 / 280</span>
+      </div>
+
+      <div class="button-row">
+        <button id="sendBtn" class="primary-btn">SEND</button>
+      </div>
+
+      <p id="warningMessage" class="warning-message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
